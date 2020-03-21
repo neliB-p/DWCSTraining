@@ -15,27 +15,11 @@ namespace CSharpCourseR
             //  {1,1,1,2,2}
             // 1 - 3 times, 2 - 2 times
 
-            //Change change 
-
             int[] number = new int[10];
             for (int i = 0; i < number.Length; i++)
             {
                 Console.WriteLine($"Input number {i + 1}");
                 number[i] = int.Parse(Console.ReadLine());
-            }
-
-            for (int i = 0; i < number.Length; i++)
-            {
-                int count = 0;
-
-                for (int j = i + 1; j < number.Length; j++)
-                {
-                    if (number[i] == number[j])
-                    {
-                        count++;
-                    }
-                }
-                Console.WriteLine($"{number[i]} - {count}"); 
             }
 
             //int[] numbers = new int[6];
