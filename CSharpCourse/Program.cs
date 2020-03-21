@@ -12,6 +12,7 @@ namespace CSharpCourseR
 
             //-------------20.03.2020--------------------
 
+            //Homework
             //  {1,1,1,2,2}
             // 1 - 3 times, 2 - 2 times
 
@@ -22,6 +23,7 @@ namespace CSharpCourseR
                 number[i] = int.Parse(Console.ReadLine());
             }
 
+            Console.WriteLine("Test");
             //int[] numbers = new int[6];
             //for (int i = 0; i < 6; i++)
             //{
