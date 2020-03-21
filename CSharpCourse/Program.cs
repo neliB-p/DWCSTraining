@@ -14,6 +14,9 @@ namespace CSharpCourseR
 
             //  {1,1,1,2,2}
             // 1 - 3 times, 2 - 2 times
+
+            //Change change 
+
             int[] number = new int[10];
             for (int i = 0; i < number.Length; i++)
             {
