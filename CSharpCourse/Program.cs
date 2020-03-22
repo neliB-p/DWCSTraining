@@ -16,14 +16,53 @@ namespace CSharpCourseR
             //  {1,1,1,2,2}
             // 1 - 3 times, 2 - 2 times
 
-            int[] number = new int[10];
-            for (int i = 0; i < number.Length; i++)
+            int[] numbers = new int[4];
+            for (int i = 0; i < numbers.Length; i++)
             {
                 Console.WriteLine($"Input number {i + 1}");
-                number[i] = int.Parse(Console.ReadLine());
+                numbers[i] = int.Parse(Console.ReadLine());
             }
 
-            Console.WriteLine("Test");
+            Array.Sort(numbers);
+
+            int count = 1;
+
+            for (int i = 0; i < numbers.Length - 1; i++)
+            {
+                if (numbers[i] == numbers[i + 1])
+                {
+                    count++;
+                }
+                else
+                {
+                    Console.WriteLine($"{numbers[i]} - {count}");
+                    count = 1;
+                }
+            }
+            //Print the last item
+            Console.WriteLine($"{numbers[numbers.Length - 1]} - {count}");
+
+
+
+            //int count = 1;
+            //for (int i = 1; i < numbers.Length; i++)
+            //{
+            //    if (numbers[i] == numbers[i - 1]) {
+            //        count++;
+            //    } else
+            //    {
+            //        Console.WriteLine($"{numbers[i - 1]} - {count}");
+            //        count = 1;
+            //    }
+
+            //    if (i == numbers.Length - 1)
+            //    {
+            //        Console.WriteLine($"{numbers[i]} - {count}");
+            //    }
+            //}
+
+
+
             //int[] numbers = new int[6];
             //for (int i = 0; i < 6; i++)
             //{
@@ -74,8 +113,8 @@ namespace CSharpCourseR
 
             //-------------------------------------
 
-            Homework1 task1 = new Homework1();
-            task1.ChooseAction();
+            //Homework1 task1 = new Homework1();
+            //task1.ChooseAction();
 
             //string input = Console.ReadLine();
             //int number = int.Parse(input);
