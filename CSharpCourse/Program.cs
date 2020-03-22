@@ -23,7 +23,6 @@ namespace CSharpCourseR
                 number[i] = int.Parse(Console.ReadLine());
             }
 
-            Console.WriteLine("Test");
             //int[] numbers = new int[6];
             //for (int i = 0; i < 6; i++)
             //{
